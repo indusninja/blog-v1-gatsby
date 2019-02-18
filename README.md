@@ -11,7 +11,7 @@ This starter is pretty basic and covers all of the essentials. All you have to d
 ## Features
 
 - **dark/light mode**, depending on your preferences (dark is default, but you can change it)
-- great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
+- great reading experience thanks to [**Fira Code font**](https://github.com/tonsky/FiraCode), made by [Nikita Prokopov](https://twitter.com/nikitonsky)
 - nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
 - responsive youtube/vimeo etc. videos [gatsby-remark-embed-video](https://github.com/borgfriend/gatsby-remark-embed-video)
 - fully responsive site
@@ -54,6 +54,15 @@ mainMenu: arrayOf(Shape { // main menu items
   title: String,
   path: String,
 })
+```
+#### To run the site in development mode
+```bash
+npm run develop
+```
+
+#### To generate build version
+```bash
+npm run build
 ```
 
 ## How to contribute
