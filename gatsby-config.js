@@ -7,15 +7,15 @@ const postCSSMixins = require('postcss-mixins')
 
 module.exports = {
   siteMetadata: {
-    title: `Hello Friend`,
-    description: `A simple starter for Gatsby. That's it.`,
+    title: `Shader Works`,
+    description: `A blog about all things coding.`,
     copyrights: '',
-    author: `@panr`,
+    author: `@indusninja`,
     logo: {
       src: '',
       alt: '',
     },
-    logoText: 'hello friend',
+    logoText: 'shader works',
     defaultTheme: 'dark',
     postsPerPage: 5,
     showMenuItems: 2,
@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         title: 'Example',
-        path: '/example',
+        path: '/mandlebrot',
       },
     ],
   },
@@ -120,7 +120,7 @@ module.exports = {
         background_color: `#292a2d`,
         theme_color: `#292a2d`,
         display: `minimal-ui`,
-        icon: `src/images/hello-icon.png`,
+        icon: `src/images/shader-works-icon.png`,
       },
     },
   ],

@@ -2,7 +2,7 @@
 title: "Prime Number Theorem"
 date: "2009-03-22"
 path: "/prime"
-coverImage: "../images/prime.gif"
+coverImage: "../images/prime.png"
 author: "Prakash Prasad"
 excerpt: "Prime Numbers have been studied as far back as the ancient Greek civilization. The prime number theorem tries to estimate the density of prime numbers near any given number."
 ---

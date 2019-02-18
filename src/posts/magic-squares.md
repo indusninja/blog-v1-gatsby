@@ -2,7 +2,7 @@
 title: "Magic Squares"
 date: "2009-03-15"
 path: "/magic-sq"
-coverImage: "../images/magic-sq.gif"
+coverImage: "../images/magic-sq.png"
 author: "Prakash Prasad"
 excerpt: "A Magic Square is an arrangement of the distinct positive integers 1, 2, …, n<sup>2</sup> such that the sum of all the rows, columns and main diagonals is always the same number. This Number that all Rows, Columns and main Diagonals add up to is known as the Magic Constant."
 ---
