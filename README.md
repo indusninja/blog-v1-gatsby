@@ -1,3 +1,4 @@
+ [![Netlify Status](https://api.netlify.com/api/v1/badges/45dac40a-0033-49d4-80be-c6b7c79165d2/deploy-status)](https://app.netlify.com/sites/hungry-wing-99d627/deploys)
  # Hello Friend
 
 ![Hello Friend](https://github.com/panr/hugo-theme-hello-friend/blob/master/images/screenshot.png?raw=true)
