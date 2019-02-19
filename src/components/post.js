@@ -6,6 +6,8 @@ import Navigation from './navigation'
 
 import style from '../styles/post.module.css'
 
+require(`katex/dist/katex.min.css`)
+
 const Post = ({
   title,
   date,
