@@ -15,23 +15,15 @@ module.exports = {
       src: '',
       alt: '',
     },
-    logoText: 'shader works',
+    logoText: 'Shader Works',
     defaultTheme: 'dark',
-    postsPerPage: 5,
+    postsPerPage: 10,
     showMenuItems: 2,
-    menuMoreText: 'Show more',
+    menuMoreText: 'More',
     mainMenu: [
       {
         title: 'About',
         path: '/about',
-      },
-      {
-        title: 'Showcase',
-        path: '/showcase',
-      },
-      {
-        title: 'Example',
-        path: '/mandlebrot',
       },
     ],
   },
