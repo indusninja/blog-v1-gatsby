@@ -1,23 +1,20 @@
 ---
 title: "About"
 date: "2018-07-19"
-author: "Radek"
+author: "Prakash Prasad"
 path: "/about"
 ---
 
-## Hi there
+## Hello World
 
-My name is Radek and I'm the author of this starter. I made it to help you present your ideas easier.
+My name is Prakash, the author of this blog. I'm a programmer with varied interests:
+- Game programming
+- Graphics programming
+- Algorithms: Performance and Optimization
+- Programming languages
 
-We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+Often while solving a problem, I've encountered issues that other programmers might also encounter. The plan for this blog is to discuss these issues, and present my findings that might help other people as well.
 
-This starter is pretty basic and covers all of the essentials. All you have to do is start typing!
-
-The starter includes:
-
-- **light/dark mode**, depending on your preferences
-- great reading experience thanks to [**Inter UI font**](https://rsms.me/inter/), made by [Rasmus Andersson](https://rsms.me/about/)
-- nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
-- responsive youtube/vimeo etc. videos thanks to [**gatsby-remark-embed-video**](https://github.com/borgfriend/gatsby-remark-embed-video)
+If you're curious about my projects, visit **[projects.shader.works](https://projects.shader.works/)**. And if you're curious about my background and experience, visit **[resume.shader.works](https://resume.shader.works/)**.
 
 So, there you have it... enjoy!
