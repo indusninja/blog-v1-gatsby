@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-hello-friend",
+  "name": "blog-site",
   "private": true,
-  "description": "A simple starter for Gatsby. That's it.",
+  "description": "A simple blog site using Gatsby.",
   "version": "0.1.0",
-  "author": "Radek Kozieł <radoslaw.koziel@gmail.com>",
+  "author": "Prakash Prasad <prakash@prakashprasad.com>",
   "keywords": [
     "gatsby",
     "minimal",
@@ -66,9 +66,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/panr/gatsby-starter-hello-friend"
+    "url": "https://github.com/indusninja/blog-site"
   },
   "bugs": {
-    "url": "https://github.com/panr/gatsby-starter-hello-friend/issues"
+    "url": "https://github.com/indusninja/blog-site/issues"
   }
 }

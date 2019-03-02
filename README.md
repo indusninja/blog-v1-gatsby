@@ -1,61 +1,30 @@
- [![Netlify Status](https://api.netlify.com/api/v1/badges/45dac40a-0033-49d4-80be-c6b7c79165d2/deploy-status)](https://app.netlify.com/sites/hungry-wing-99d627/deploys)
- # Hello Friend
+[![Netlify Status](https://api.netlify.com/api/v1/badges/45dac40a-0033-49d4-80be-c6b7c79165d2/deploy-status)](https://app.netlify.com/sites/hungry-wing-99d627/deploys)
 
-![Hello Friend](https://github.com/panr/hugo-theme-hello-friend/blob/master/images/screenshot.png?raw=true)
+# Blog
 
-This starter was made to help you present your ideas easier. We all know how hard is to start something on the web, especially these days. You need to prepare a bunch of stuff, configure them and when that’s done — create the content.
+This is a project with two objectives
+- working with a modern static site generator with all the benefits of *React*, *GraphQL* and *Markdown*,
+- while also making a new blog to share ideas about programming with the internet.
 
-This starter is pretty basic and covers all of the essentials. All you have to do is start typing!
+While I've tried some other static site generators for my other projects (projects and resume), Gatsby is probably the most powerful because it leverages the work already done by the React community.
 
-### DEMO - https://gatsby-hello-friend.now.sh/
+## Starter Kit
 
-## Features
+For this blog, I'm using the [Hello World](https://github.com/panr/gatsby-starter-hello-friend) starter kit for Gatsby from [Radosław Kozieł](https://radoslawkoziel.pl).
 
+This starter is very clean and enables me to get started very easily and quickly. It has some cool features already built in:
 - **dark/light mode**, depending on your preferences (dark is default, but you can change it)
-- great reading experience thanks to [**Fira Code font**](https://github.com/tonsky/FiraCode), made by [Nikita Prokopov](https://twitter.com/nikitonsky)
 - nice code highlighting thanks to [**PrismJS**](https://prismjs.com)
 - responsive youtube/vimeo etc. videos [gatsby-remark-embed-video](https://github.com/borgfriend/gatsby-remark-embed-video)
 - fully responsive site
 
-#### Code highlighting
+## Customizations
+While the starter kit is great out of the box, I've made some modifications to tailor the experience to my needs:
+- replaced the font to [**Fira Code font**](https://github.com/tonsky/FiraCode), made by [Nikita Prokopov](https://twitter.com/nikitonsky) to suit my preference better.
+- latex support using `katex`
+- **TODO:** integrate a way to add a shader file to a post and automatically render that shader in a widget, perhaps using [this gatsby plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-glslify/).
+- **TODO:** infinite scroll to automatically load older posts instead of pagination.
 
-By default the theme is using PrismJS to color your code syntax. All you need to do is to wrap you code like this:
-
-<pre>
-```html
-  // your code here
-```
-</pre>
-
-**Supported languages**: bash/shell, css, clike, javascript, apacheconf, actionscript, applescript, c, csharp, cpp, coffeescript, ruby, csp, css-extras, diff, django, docker, elixir, elm, markup-templating, erlang, fsharp, flow, git, go, graphql, less, handlebars, haskell, http, java, json, kotlin, latex, markdown, makefile, objectivec, ocaml, perl, php, php-extras, r, sql, processing, scss, python, jsx, typescript, toml, reason, textile, rust, sass, stylus, scheme, pug, swift, yaml, haml, twig, tsx, vim, visual-basic, wasm.
-
-## How it works
-
-It's a simple starter for blogs and personal sites. You have `posts` and `pages` directories. Posts are generated from markdown files with required fileds: `title`, `date` and `path`. Pages can be generated from markdown files as well (with built-in navigation between them, just like in posts) but you can also generate them from JavaScript files (just like you normally do in Gatsby). If so, you should wrap your content in `Layout` component. It's not required, but highly recommended.
-
-#### Configuration
-
-You can configure starter in `gatsby-config.js`. Here's what you can change:
-
-```
-title: String,
-description: String,
-copyrights: String,
-author: String,
-logo: Shape { // you can place your own logo
-  src: String,
-  alt: String,
-},
-logoText: String, // change default Hello Friend logo
-defaultTheme: String, // light or dark as default
-postsPerPage: Number, // pagination
-showMenuItems: Number, // number of visible main menu items
-menuMoreText: String, // string of main sub menu trigger (not visible items from main menu)
-mainMenu: arrayOf(Shape { // main menu items
-  title: String,
-  path: String,
-})
-```
 #### To run the site in development mode
 ```bash
 npm run develop
@@ -65,16 +34,3 @@ npm run develop
 ```bash
 npm run build
 ```
-
-## How to contribute
-
-If you spot any bugs, please use [Issue Tracker](https://github.com/panr/gatsby-starter-hello-friend/issues) or if you want to add a new feature directly please create a new [Pull Request](https://github.com/panr/gatsby-starter-hello-friend/pulls).
-
-## Licence
-
-Copyright © 2019 Radosław Kozieł ([@panr](https://radoslawkoziel.pl))
-
-The starter is released under the MIT License. Check the [original theme license](https://github.com/panr/gatsby-starter-hello-friend.git/blob/master/LICENSE.md) for additional licensing information.
-
-## TODO
-- Look into including WebGL in the posts, perhaps using [this gatsby plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-glslify/).
