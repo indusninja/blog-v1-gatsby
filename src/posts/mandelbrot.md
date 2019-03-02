@@ -4,7 +4,7 @@ date: "2009-03-17"
 path: "/mandelbrot"
 coverImage: "../images/mandelbrot_mag.png"
 author: "Prakash Prasad"
-excerpt: "Mandelbrot set was named after the mathematician Benoit Mandelbrot, and its a set of complex numbers drawn on the complex number plane to create a very complex geometry from a very simple equation."
+excerpt: "Mandelbrot set was named after the mathematician Benoit Mandelbrot, and its a set of numbers drawn on the complex number plane to create a complex 2D geometry from a very simple mathematical equation..."
 ---
 
 The Mandelbrot set was named after the mathematician Benoit Mandelbrot. The Mandelbrot set is one of the most famous examples of a fractal and the process of generating it is based on an extremely simple equation involving complex numbers.

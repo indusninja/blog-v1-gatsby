@@ -4,7 +4,7 @@ date: "2009-03-22"
 path: "/prime"
 coverImage: "../images/prime.png"
 author: "Prakash Prasad"
-excerpt: "Prime Numbers have been studied as far back as the ancient Greek civilization. The prime number theorem tries to estimate the density of prime numbers near any given number."
+excerpt: "Prime numbers are a fascinating topic that has been studied since ancient Greeks due to interesting characteristics. Prime number theorem is one such topic that aims to estimate the density of prime numbers for any given number..."
 ---
 
 Properties of Prime Numbers have been studied as far back as the ancient Greek civilization. Be it the mathematicians of Pythagoras’ School (500 BC to 300 BC), Euclid in about 300 BC or Eratosthenes in around 200 BC; the Greeks came up with most of the basic and important identities and their proves:

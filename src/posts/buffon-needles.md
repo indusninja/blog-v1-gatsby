@@ -4,7 +4,7 @@ date: "2009-03-14"
 path: "/needle"
 coverImage: "../images/buffon_needles.png"
 author: "Prakash Prasad"
-excerpt: "With buffon’s needles experiment, we can try to calculate the value of pi. This kind of approximate calculation is classes as a Monte Carlo Method"
+excerpt: "Buffon's needle is a mathematical experiment that can calculate the value of pi surprisingly accurately. However, as it turns out, the result isn't very surprising as it belongs to a category of techniques collectively classed as Monte Carlo methods - calculation of mathematical values via very large number of randomized trials..."
 ---
 
 Buffon’s needle is a classic experiment in the field of Geometric Probability Theory.

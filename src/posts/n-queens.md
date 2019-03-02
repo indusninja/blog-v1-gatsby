@@ -4,7 +4,7 @@ date: "2009-03-19"
 path: "/n-queens"
 coverImage: "../images/n-queens.jpg"
 author: "Prakash Prasad"
-excerpt: "The standard N Queen’s problem asks a very interesting question – how to place N queens on an N x N chess board so that none of them can hit any other in one move."
+excerpt: "The standard N Queen’s problem asks a very interesting question – how can N queens be placed on an N x N chess board in such a way so that none of them can hit any other in their turn?..."
 ---
 
 In chess, a queen can move as far as she pleases, horizontally, vertically, or diagonally. A conventional chess board has 8 rows and 8 columns. But when a mathematician looks at a problem like this one, then he always likes to generalize it. The standard $N \times N$ Queen’s problem asks a very interesting question – how to place N queens on a $N \times N$ chess board so that none of them can hit any other in one move.
