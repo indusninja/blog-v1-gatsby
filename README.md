@@ -21,9 +21,11 @@ This starter is very clean and enables me to get started very easily and quickly
 ## Customizations
 While the starter kit is great out of the box, I've made some modifications to tailor the experience to my needs:
 - replaced the font to [**Fira Code font**](https://github.com/tonsky/FiraCode), made by [Nikita Prokopov](https://twitter.com/nikitonsky) to suit my preference better.
-- latex support using `katex`
+- LaTeX support using `katex`
 - **TODO:** integrate a way to add a shader file to a post and automatically render that shader in a widget, perhaps using [this gatsby plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-glslify/).
 - **TODO:** infinite scroll to automatically load older posts instead of pagination.
+- **TODO:** better formatting of the `excerpt` component, like support for markdown and LaTeX formatting.
+- **TODO:** figure out a way to manage `drafts`.
 
 #### To run the site in development mode
 ```bash
