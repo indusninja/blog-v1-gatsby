@@ -26,6 +26,7 @@ While the starter kit is great out of the box, I've made some modifications to t
 - **TODO:** infinite scroll to automatically load older posts instead of pagination.
 - **TODO:** better formatting of the `excerpt` component, like support for markdown and LaTeX formatting.
 - **TODO:** figure out a way to manage `drafts`.
+- **TODO:** make normal links to be this pink color `color: var(--cursor-color);` (but not post titles).
 
 #### To run the site in development mode
 ```bash
