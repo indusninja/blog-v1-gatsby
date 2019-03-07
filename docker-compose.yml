@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: gatsby-blog-site
-    command: sh -c "npm install && gatsby develop -H 0.0.0.0"
+    command: sh -c "npm install && gatsby develop -H 0.0.0.0 -p 8000"
     ports:
       - "8000:8000"
     volumes:
