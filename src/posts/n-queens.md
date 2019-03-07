@@ -2,7 +2,7 @@
 title: "N Queens Problem"
 date: "2009-03-19"
 path: "/n-queens"
-coverImage: "../images/n-queens.webp"
+coverImage: "../images/n-queens.jpg"
 author: "Prakash Prasad"
 excerpt: "The standard N Queen’s problem asks a very interesting question – how can N queens be placed on an N x N chess board in such a way so that none of them can hit any other in their turn?..."
 ---

@@ -2,7 +2,7 @@
 title: "Buffon’s Needle"
 date: "2009-03-14"
 path: "/needle"
-coverImage: "../images/buffon_needles.webp"
+coverImage: "../images/buffon_needles.png"
 author: "Prakash Prasad"
 excerpt: "Buffon's needle is a mathematical experiment that can calculate the value of pi surprisingly accurately. However, as it turns out, the result isn't very surprising as it belongs to a category of techniques collectively classed as Monte Carlo methods - calculation of mathematical values via very large number of randomized trials..."
 ---
