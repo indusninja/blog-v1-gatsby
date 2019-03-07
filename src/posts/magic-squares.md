@@ -2,7 +2,7 @@
 title: "Magic Squares"
 date: "2009-03-15"
 path: "/magic-sq"
-coverImage: "../images/magic-sq.png"
+coverImage: "../images/magic-sq.webp"
 author: "Prakash Prasad"
 excerpt: "A 'Magic Square' is an arrangement of the distinct positive integers 1, 2, 3, …, n^2 such that the sum of all the rows, columns and main diagonals is always the same number, which is known as the 'Magic Constant'. Lets try to write an algorithm that can find a magic square for N x N and see what kind of performance we can get to ..."
 ---

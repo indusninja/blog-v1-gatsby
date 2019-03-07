@@ -2,7 +2,7 @@
 title: "Mandelbrot Set"
 date: "2009-03-17"
 path: "/mandelbrot"
-coverImage: "../images/mandelbrot_mag.png"
+coverImage: "../images/mandelbrot_mag.webp"
 author: "Prakash Prasad"
 excerpt: "Mandelbrot set was named after the mathematician Benoit Mandelbrot, and its a set of numbers drawn on the complex number plane to create a complex 2D geometry from a very simple mathematical equation..."
 ---
