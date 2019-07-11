@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  lighthouse:
+    build:
+      context: .
+    volumes:
+      - ./reports:/home/lighthouse/reports
+    environment:
+      - url=https://shader.works
+      - site_name=shader.works
