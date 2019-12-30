@@ -1,14 +1,17 @@
 version: "3.7"
 
 services:
-  develop:
+  web:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: gatsby-blog
-    command: sh -c "npm install && gatsby develop -H 0.0.0.0 -p 8000"
     ports:
       - "8000:8000"
-    volumes:
-      - .:/app
-    restart: always
+      - "9929:9929"
+      - "9230:9230"
+    #volumes:
+    #  - /app/node_modules
+    #  - .:/app
+    environment:
+      - NODE_ENV=development
+      - GATSBY_WEBPACK_PUBLICPATH=/
