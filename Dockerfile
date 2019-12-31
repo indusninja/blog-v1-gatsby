@@ -1,17 +1,21 @@
-FROM node:alpine
+FROM node:alpine as BUILDER
+WORKDIR /cache
 
 RUN apk add --no-cache python make g++ \
     && rm -fR /var/cache/apk/*
 
-RUN npm install -g gatsby-cli
-RUN gatsby telemetry --disable
-
-WORKDIR /app
-
 COPY package.json .
 COPY yarn.lock .
 RUN yarn install
+
+FROM node:alpine
+WORKDIR /app
+
+COPY --from=BUILDER /cache ./
 COPY . .
+
+RUN yarn global add gatsby-cli gatsby-dev-cli
+RUN yarn install && yarn cache clean
 
 # Also exposing VSCode debug ports
 EXPOSE 8000 9929 9230
