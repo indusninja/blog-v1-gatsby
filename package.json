@@ -20,10 +20,12 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
-    "gatsby": "^2.0.76",
+    "gatsby": "^2.31.0",
     "gatsby-awesome-pagination": "^0.3.3",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-google-analytics": "^2.0.14",
@@ -43,7 +45,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "snyk": "^1.438.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -70,5 +73,6 @@
   },
   "bugs": {
     "url": "https://github.com/indusninja/blog-site/issues"
-  }
+  },
+  "snyk": true
 }
