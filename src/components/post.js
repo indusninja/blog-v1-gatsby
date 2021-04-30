@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import Img from 'gatsby-image'
-import Navigation from './navigation'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import Navigation from "./navigation";
 
-import style from '../styles/post.module.css'
+import * as style from "../styles/post.module.css";
 
-require(`katex/dist/katex.min.css`)
+import "katex/dist/katex.min.css";
 
 const Post = ({
   title,
@@ -19,10 +19,10 @@ const Post = ({
   previousPost,
   nextPost,
 }) => {
-  const previousPath = previousPost && previousPost.frontmatter.path
-  const previousLabel = previousPost && previousPost.frontmatter.title
-  const nextPath = nextPost && nextPost.frontmatter.path
-  const nextLabel = nextPost && nextPost.frontmatter.title
+  const previousPath = previousPost && previousPost.frontmatter.path;
+  const previousLabel = previousPost && previousPost.frontmatter.title;
+  const nextPath = nextPost && nextPost.frontmatter.path;
+  const nextLabel = nextPost && nextPost.frontmatter.title;
 
   return (
     <div className={style.post}>
@@ -32,9 +32,10 @@ const Post = ({
           {date} {author && <>— written by {author}</>}
         </div>
         {coverImage && (
-          <Img
-            fluid={coverImage.childImageSharp.fluid}
+          <GatsbyImage
+            image={coverImage.childImageSharp.gatsbyImageData}
             className={style.coverImage}
+            alt=""
           />
         )}
         {excerpt ? (
@@ -57,8 +58,8 @@ const Post = ({
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
 Post.propTypes = {
   title: PropTypes.string,
@@ -70,6 +71,6 @@ Post.propTypes = {
   html: PropTypes.string,
   previousPost: PropTypes.object,
   nextPost: PropTypes.object,
-}
+};
 
-export default Post
+export default Post;
