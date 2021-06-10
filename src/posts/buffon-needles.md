@@ -11,7 +11,7 @@ Buffon’s needle is a classic experiment in the field of Geometric Probability 
 
 A needle of length $1$ is thrown on a square floor tile with sides of length $2$. The problem is to determine the probability $p$ of the event that the needle will fall across a crack between planks.
 
-`youtube: sJVivjuMfWA`
+https://www.youtube.com/watch?v=sJVivjuMfWA
 
 Using the geometry, we can calculate $p=\frac{1}{\pi}$
 

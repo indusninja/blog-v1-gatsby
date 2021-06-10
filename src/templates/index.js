@@ -1,14 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Post from '../components/post'
-import Navigation from '../components/navigation'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import Post from "../components/post";
+import Navigation from "../components/navigation";
 
 const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
   const {
     allMarkdownRemark: { edges: posts },
-  } = data
+  } = data;
 
   return (
     <Layout>
@@ -17,7 +17,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
           id,
           excerpt: autoExcerpt,
           frontmatter: { title, date, path, author, coverImage, excerpt },
-        } = node
+        } = node;
 
         return (
           <Post
@@ -29,7 +29,7 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
             coverImage={coverImage}
             excerpt={excerpt || autoExcerpt}
           />
-        )
+        );
       })}
 
       <Navigation
@@ -39,8 +39,8 @@ const Index = ({ data, pageContext: { nextPagePath, previousPagePath } }) => {
         nextLabel="Older posts"
       />
     </Layout>
-  )
-}
+  );
+};
 
 Index.propTypes = {
   data: PropTypes.object.isRequired,
@@ -48,7 +48,7 @@ Index.propTypes = {
     nextPagePath: PropTypes.string,
     previousPagePath: PropTypes.string,
   }),
-}
+};
 
 export const postsQuery = graphql`
   query($limit: Int!, $skip: Int!) {
@@ -70,9 +70,7 @@ export const postsQuery = graphql`
             excerpt
             coverImage {
               childImageSharp {
-                fluid(maxWidth: 800) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: CONSTRAINED, width: 800)
               }
             }
           }
@@ -80,6 +78,6 @@ export const postsQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default Index
+export default Index;

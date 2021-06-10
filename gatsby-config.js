@@ -1,29 +1,29 @@
-const postCssPresetEnv = require(`postcss-preset-env`)
-const postCSSNested = require('postcss-nested')
-const postCSSUrl = require('postcss-url')
-const postCSSImports = require('postcss-import')
-const cssnano = require('cssnano')
-const postCSSMixins = require('postcss-mixins')
+const postCssPresetEnv = require("postcss-preset-env");
+const postCSSNested = require("postcss-nested");
+const postCSSUrl = require("postcss-url");
+const postCSSImports = require("postcss-import");
+const cssnano = require("cssnano");
+const postCSSMixins = require("postcss-mixins");
 
 module.exports = {
   siteMetadata: {
     title: `Shader Works`,
     description: `A blog about all things coding.`,
-    copyrights: '',
+    copyrights: "",
     author: `@indusninja`,
     logo: {
-      src: '',
-      alt: '',
+      src: "",
+      alt: "",
     },
-    logoText: 'Shader Works',
-    defaultTheme: 'dark',
+    logoText: "Shader Works",
+    defaultTheme: "dark",
     postsPerPage: 10,
     showMenuItems: 2,
-    menuMoreText: 'More',
+    menuMoreText: "More",
     mainMenu: [
       {
-        title: 'About',
-        path: '/about',
+        title: "About",
+        path: "/about",
       },
     ],
   },
@@ -60,35 +60,40 @@ module.exports = {
           postCSSMixins(),
           postCSSNested(),
           postCssPresetEnv({
-            importFrom: 'src/styles/variables.css',
+            importFrom: "src/styles/variables.css",
             stage: 1,
             preserve: false,
           }),
           cssnano({
-            preset: 'default',
+            preset: "default",
           }),
         ],
       },
-    },    
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-53835019-4',
+        trackingId: "UA-53835019-4",
         anonymize: true,
         respectDNT: true,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-embed-video',
+            resolve: `gatsby-remark-embedder`,
             options: {
-              related: false,
-              noIframeBorder: true,
+              customTransformers: [
+                // Your custom transformers
+              ],
+              services: {
+                // The service-specific options by the name of the service
+              },
             },
           },
           {
@@ -102,7 +107,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: "language-",
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: false,
@@ -132,4 +137,4 @@ module.exports = {
       },
     },
   ],
-}
+};

@@ -1,45 +1,45 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "gatsby";
+import { Helmet } from "react-helmet";
 
-import Menu from './menu'
+import Menu from "./menu";
 
-import style from '../styles/header.module.css'
+import * as style from "../styles/header.module.css";
 
 class Header extends React.Component {
   state = {
     userTheme:
-      (typeof window !== 'undefined' && window.localStorage.getItem('theme')) ||
+      (typeof window !== "undefined" && window.localStorage.getItem("theme")) ||
       null,
     isMobileMenuVisible: false,
     isSubMenuVisible: false,
-  }
+  };
 
-  onChangeTheme = this.onChangeTheme.bind(this)
+  onChangeTheme = this.onChangeTheme.bind(this);
 
-  onToggleMobileMenu = this.onToggleMobileMenu.bind(this)
+  onToggleMobileMenu = this.onToggleMobileMenu.bind(this);
 
-  onToggleSubMenu = this.onToggleSubMenu.bind(this)
+  onToggleSubMenu = this.onToggleSubMenu.bind(this);
 
   onChangeTheme() {
-    const { userTheme } = this.state
+    const { userTheme } = this.state;
     const opositeTheme =
-      userTheme === 'dark' || userTheme === null ? 'light' : 'dark'
+      userTheme === "dark" || userTheme === null ? "light" : "dark";
 
-    this.setState({ userTheme: opositeTheme })
-    typeof window !== 'undefined' &&
-      window.localStorage.setItem('theme', opositeTheme)
+    this.setState({ userTheme: opositeTheme });
+    typeof window !== "undefined" &&
+      window.localStorage.setItem("theme", opositeTheme);
   }
 
   onToggleMobileMenu() {
-    const { isMobileMenuVisible } = this.state
-    this.setState({ isMobileMenuVisible: !isMobileMenuVisible })
+    const { isMobileMenuVisible } = this.state;
+    this.setState({ isMobileMenuVisible: !isMobileMenuVisible });
   }
 
   onToggleSubMenu() {
-    const { isSubMenuVisible } = this.state
-    this.setState({ isSubMenuVisible: !isSubMenuVisible })
+    const { isSubMenuVisible } = this.state;
+    this.setState({ isSubMenuVisible: !isSubMenuVisible });
   }
 
   render() {
@@ -51,8 +51,8 @@ class Header extends React.Component {
       mainMenuItems,
       menuMoreText,
       theme,
-    } = this.props
-    const { userTheme, isSubMenuVisible, isMobileMenuVisible } = this.state
+    } = this.props;
+    const { userTheme, isSubMenuVisible, isMobileMenuVisible } = this.state;
 
     return (
       <>
@@ -60,7 +60,7 @@ class Header extends React.Component {
           <title>{siteTitle}</title>
           <body
             className={
-              (userTheme || theme) === 'light' ? 'light-theme' : 'dark-theme'
+              (userTheme || theme) === "light" ? "light-theme" : "dark-theme"
             }
           />
         </Helmet>
@@ -94,7 +94,7 @@ class Header extends React.Component {
           </div>
         </header>
       </>
-    )
+    );
   }
 }
 
@@ -111,6 +111,6 @@ Header.propTypes = {
   ),
   mainMenuItems: PropTypes.number,
   menuMoreText: PropTypes.string,
-}
+};
 
-export default Header
+export default Header;

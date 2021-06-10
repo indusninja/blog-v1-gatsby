@@ -1,11 +1,11 @@
-const { paginate } = require('gatsby-awesome-pagination')
-const path = require('path')
+const { paginate } = require("gatsby-awesome-pagination");
+const path = require("path");
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
-  const pageTemplate = path.resolve(`./src/templates/page.js`)
-  const indexTemplate = path.resolve(`./src/templates/index.js`)
+  const pageTemplate = path.resolve(`./src/templates/page.js`);
+  const indexTemplate = path.resolve(`./src/templates/index.js`);
 
   return graphql(`
     {
@@ -45,7 +45,7 @@ exports.createPages = ({ actions, graphql }) => {
       allMarkdownRemark: { edges: markdownPages },
       posts: { edges: posts },
       site: { siteMetadata },
-    } = result.data
+    } = result.data;
     const sortedPages = markdownPages.sort(
       (
         {
@@ -59,10 +59,10 @@ exports.createPages = ({ actions, graphql }) => {
           },
         },
       ) => (typeA > typeB) - (typeA < typeB),
-    )
+    );
 
     if (result.errors) {
-      return Promise.reject(result.errors)
+      return Promise.reject(result.errors);
     }
 
     paginate({
@@ -70,19 +70,19 @@ exports.createPages = ({ actions, graphql }) => {
       items: posts,
       component: indexTemplate,
       itemsPerPage: siteMetadata.postsPerPage,
-      pathPrefix: '/',
-    })
+      pathPrefix: "/",
+    });
 
     sortedPages.forEach(({ node }, index) => {
-      const pageTypeRegex = /src\/(.*?)\//
-      const getType = el => el.fileAbsolutePath.match(pageTypeRegex)[1]
+      const pageTypeRegex = /src\/(.*?)\//;
+      const getType = el => el.fileAbsolutePath.match(pageTypeRegex)[1];
 
-      const previous = index === 0 ? null : sortedPages[index - 1].node
+      const previous = index === 0 ? null : sortedPages[index - 1].node;
       const next =
-        index === sortedPages.length - 1 ? null : sortedPages[index + 1].node
-      const isNextSameType = getType(node) === (next && getType(next))
+        index === sortedPages.length - 1 ? null : sortedPages[index + 1].node;
+      const isNextSameType = getType(node) === (next && getType(next));
       const isPreviousSameType =
-        getType(node) === (previous && getType(previous))
+        getType(node) === (previous && getType(previous));
 
       createPage({
         path: node.frontmatter.path,
@@ -92,9 +92,9 @@ exports.createPages = ({ actions, graphql }) => {
           next: isNextSameType ? next : null,
           previous: isPreviousSameType ? previous : null,
         },
-      })
-    })
+      });
+    });
 
-    return sortedPages
-  })
-}
+    return sortedPages;
+  });
+};
