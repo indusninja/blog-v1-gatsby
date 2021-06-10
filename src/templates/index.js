@@ -70,7 +70,7 @@ export const postsQuery = graphql`
             excerpt
             coverImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, width: 800)
               }
             }
           }
