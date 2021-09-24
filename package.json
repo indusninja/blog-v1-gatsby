@@ -42,12 +42,12 @@
     "gatsby-transformer-remark": "^4.1.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "katex": "^0.13.0",
-    "prismjs": "^1.24.0",
+    "prismjs": "^1.25.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
-    "snyk": "^1.667.0"
+    "snyk": "^1.685.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
