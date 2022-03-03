@@ -2,7 +2,7 @@
   "name": "blog-site",
   "private": true,
   "description": "A simple blog site using Gatsby.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Prakash Prasad <prakash@prakashprasad.com>",
   "keywords": [
     "gatsby",
@@ -21,10 +21,11 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
+    "@snyk/protect": "^1.861.0",
     "gatsby": "^4.7.1",
     "gatsby-awesome-pagination": "^0.3.8",
     "gatsby-plugin-google-analytics": "^4.7.0",
@@ -34,6 +35,7 @@
     "gatsby-plugin-postcss": "^5.7.0",
     "gatsby-plugin-react-helmet": "^5.7.0",
     "gatsby-plugin-sharp": "^4.7.0",
+    "gatsby-remark-embedder": "^6.0.0",
     "gatsby-remark-images": "^6.7.0",
     "gatsby-remark-katex": "^6.7.0",
     "gatsby-remark-prismjs": "^6.7.0",
@@ -45,8 +47,7 @@
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "snyk": "^1.850.0"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
