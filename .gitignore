@@ -70,3 +70,7 @@ yarn-error.log
 
 # lighthouse reports
 lighthouse/reports/
+
+# idea based IDE
+.idea/
+
