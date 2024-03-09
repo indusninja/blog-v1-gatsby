@@ -9,10 +9,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 1000
-      ) {
+      allMarkdownRemark(sort: {frontmatter: {date: DESC}}, limit: 1000) {
         edges {
           node {
             frontmatter {
@@ -23,7 +20,7 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-      posts: allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
+      posts: allFile(filter: {sourceInstanceName: {eq: "posts"}}) {
         edges {
           node {
             childMarkdownRemark {
